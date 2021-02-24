@@ -10,33 +10,100 @@
 <body>
     <div class="container">
         <form action="">
-            <div class="d-flex row">
+            <div class="row">
                 <h2 class="text-center">Arqueo ventanillas</h2>
             </div>
             <div class="row justify-content-between">
-                <div class="col-6 input-group m-3">
-                    <span class="input-group-text" id="fecha">Fecha:</span>
-                    <input type="date" class="form-control" aria-label="fecha" aria-describedby="fecha">
-                </div>
-                <div class="col-6 input-group m-3">
-                    <span class="input-group-text" id="cajero">Cajero:</span>
-                    <input type="text" class="form-control" aria-label="cajero" aria-describedby="cajero">
-                </div>
-            <div class="row">
                 <div class="col-4">
-                    <label for="pago_ticket">Tickets pagados:</label>
-                    <input type="number" name="tickets-p" id="pago_ticket">
-                    <label for="pago_ra">Reportes por avería:</label>
-                    <input type="number" name="ra-p" id="pago_ra">
-                    <label for="pago_mystery">Mysterys pagados:</label>
-                    <input type="number" name="mysterys-p" id="pago_mystery">
-                    <label for="total">Total a rendir:</label>
-                    <input type="number" name="total-a-rendir" id="total">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="fecha">Fecha:</span>
+                        <input type="date" class="form-control" aria-label="fecha" aria-describedby="fecha">
+                    </div>
                 </div>
-                <div class="col-8">
-                    <label for="venta_ticket">Tickets vendidos:</label>
-                    <input type="number" name="tickets-v" id="venta_ticket">
+                <div class="col-6">
+                    <div class="input-group mb-3 col">
+                        <span class="input-group-text" id="cajero">Cajero:</span>
+                        <input type="text" class="form-control" aria-label="cajero" aria-describedby="cajero">
+                    </div>
                 </div>
+                
+            <div class="row justify-content-between">
+                <div class="col-4">
+                    <h3 class="text-center">Pagos</h3>
+                    <div class="input-group">
+                        <span class="input-group-text" id="pago_ticket">Tickets pagados:</span>
+                        <input type="number" class="form-control text-end" aria-label="tickets" aria-describedby="pago_ticket">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text" id="venta_ticket">Tickets vendidos:</span>
+                        <input type="number" class="form-control text-end" aria-label="tickets" aria-describedby="venta_ticket">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text" id="pago_ra">Reportes por avería:</span>
+                        <input type="number" class="form-control text-end" aria-label="reporte averia" aria-describedby="pago_ra">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text" id="pago_mystery">Mysterys pagados:</span>
+                        <input type="number" class="form-control text-end" aria-label="mystery" aria-describedby="pago_mystery" step="0.01">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text" id="total">Total a rendir:</span>
+                        <input type="number" class="form-control text-end" aria-label="total" aria-describedby="total">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h3 class="text-center">Rendición</h3>
+                    <div class="input-group">
+                        <input type="number" class="form-control text-center" aria-label="1000" aria-describedby="1000">
+                        <span class="input-group-text" id="1000">x 1000</span>
+                        <input type="number" class="form-control text-end" aria-label="1000" aria-describedby="1000">
+                    </div>
+                    <div class="input-group">
+                        <input type="number" class="form-control text-center" aria-label="500" aria-describedby="500">
+                        <span class="input-group-text" id="500">x 500</span>
+                        <input type="number" class="form-control text-end" aria-label="500" aria-describedby="500">
+                    </div>
+                    <div class="input-group">
+                        <input type="number" class="form-control text-center" aria-label="200" aria-describedby="200">
+                        <span class="input-group-text" id="200">x 200</span>
+                        <input type="number" class="form-control text-end" aria-label="200" aria-describedby="200">
+                    </div>
+                    <div class="input-group">
+                        <input type="number" class="form-control text-center" aria-label="100" aria-describedby="100">
+                        <span class="input-group-text" id="100">x 100</span>
+                        <input type="number" class="form-control text-end" aria-label="100" aria-describedby="100">
+                    </div>
+                    <div class="input-group">
+                        <input type="number" class="form-control text-center" aria-label="50" aria-describedby="50">
+                        <span class="input-group-text" id="50">x 50</span>
+                        <input type="number" class="form-control text-end" aria-label="50" aria-describedby="50">
+                    </div>
+                    <div class="input-group">
+                        <input type="number" class="form-control text-center" aria-label="20" aria-describedby="20">
+                        <span class="input-group-text" id="20">x 20</span>
+                        <input type="number" class="form-control text-end" aria-label="20" aria-describedby="20">
+                    </div>
+                    <div class="input-group">
+                        <input type="number" class="form-control text-center" aria-label="10" aria-describedby="10">
+                        <span class="input-group-text" id="10">x 10</span>
+                        <input type="number" class="form-control text-end" aria-label="10" aria-describedby="10">
+                    </div>
+                    <div class="input-group">
+                        <input type="number" class="form-control text-center" aria-label="monedas" aria-describedby="monedas">
+                        <span class="input-group-text" id="monedas">monedas</span>
+                        <input type="number" class="form-control text-end" aria-label="monedas" aria-describedby="monedas">
+                    </div>
+                    <div class="input-group">
+                        <input type="number" class="form-control text-center" aria-label="fichas" aria-describedby="fichas">
+                        <span class="input-group-text" id="fichas">fichas</span>
+                        <input type="number" class="form-control text-end" aria-label="fichas" aria-describedby="fichas">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text" id="total">Total</span>
+                        <input type="number" class="form-control text-end" aria-label="total" aria-describedby="total">
+                    </div>
+                </div>
+            </div>
         </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
