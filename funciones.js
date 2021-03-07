@@ -1,8 +1,19 @@
+var lista = document.querySelectorAll("div#billetaje input.cantidad");
+var contador = 0;
+
+const cantidad = document.getElementById("mil");
+
 function billetesDe() {
-    var cantidad_1000 = document.arqueo.prueba.value;
-    var resultado = cantidad_1000 * 1000;
-    return resultado;
+    for (contador in lista) {
+        switch(contador) {
+            case 0:
+                var valor = document.querySelector(lista[0]);
+                valor.value = cantidad.value * 1000;
+        }
+    }
+    //const valor = document.getElementById("valor_1000");
+    //valor.value = cantidad.value * 1000;
+    //return resultado;
 }
 
-const elemento = document.getElementById("valor_1000");
-elemento.innerHTML = billetesDe();
+//cantidad.addEventListener("keyup", billetesDe());
